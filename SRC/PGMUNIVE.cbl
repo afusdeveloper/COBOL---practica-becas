@@ -186,7 +186,7 @@
                MOVE 'SI'                TO WSV-DET-BECADO               
             ELSE                                                        
                MOVE 'NO'                TO WSV-DET-BECADO.              
-        041-BECADO-END. EXIT.                                           
+        041-BECADO-END. EXIT.                      
                                                                         
         040-LEE.                                                        
             READ ALUMNO                 INTO WSV-REG-ALUMNOS AT END     
