@@ -21,15 +21,15 @@
            RECORD CONTAINS 50 CHARACTERS                      
            BLOCK CONTAINS 0 RECORDS                           
            DATA RECORD IS REG-ALUMNOS.   
-         
-       01  REG-ALUMNOS                 PIC X(50).             
+       01  REG-ALUMNOS                 PIC X(50). 
+                     
        FD  REPORTE                                            
            LABEL RECORDS ARE STANDARD                         
            RECORD CONTAINS 80 CHARACTERS                      
            BLOCK CONTAINS 0 RECORDS                           
            DATA RECORD IS REG-REPORTE.  
-         
-       01  REG-REPORTE                 PIC X(80).             
+       01  REG-REPORTE                 PIC X(80).
+                       
        WORKING-STORAGE SECTION.                               
        77  WSS-FIN                     PIC X(03) VALUE '   '. 
            88 WSS-SI                             VALUE 'FIN'. 
