@@ -46,7 +46,7 @@
             05 WSV-ALUMNOS-LEI          PIC 9(05) VALUE ZEROS.         
             05 WSV-ALUMN-IMP            PIC 9(05) VALUE ZEROS.         
             05 WSV-TOT-MONT-BEC         PIC 9(09)V99 VALUE ZEROS.      
-       *    05 WSS-FIN                  PIC X(03) VALUE SPACES.        
+      *     05 WSS-FIN                  PIC X(03) VALUE SPACES.        
                                                                        
         01  WSC-TIT-1.                                                 
             05 FILLER                   PIC X(30) VALUE SPACES.        
@@ -89,16 +89,15 @@
                                                                          
         01  WSC-GUION-DETA.                                              
             05 FILLER                   PIC X(01) VALUE SPACES.          
-            05 FILLER                   PIC X(08) VALUE '--------'.      
+            05 FILLER                   PIC X(08) VALUE ALL '-'.      
             05 FILLER                   PIC X(04) VALUE SPACES.          
-            05 FILLER                   PIC X(25)                        
-                                     VALUE '-------------------------'.  
+            05 FILLER                   PIC X(25) VALUE ALL '-'.  
             05 FILLER                   PIC X(02) VALUE SPACES.          
-            05 FILLER                   PIC X(08) VALUE '--------'.      
+            05 FILLER                   PIC X(08) VALUE ALL '-'.      
             05 FILLER                   PIC X(04) VALUE SPACES.          
-            05 FILLER                   PIC X(06) VALUE '------'.        
+            05 FILLER                   PIC X(06) VALUE ALL '-'.        
             05 FILLER                   PIC X(07) VALUE SPACES.          
-            05 FILLER                   PIC X(14) VALUE '--------------'.
+            05 FILLER                   PIC X(14) VALUE ALL '-'.
                                                                          
         01  WSV-DETALLE.                                                 
             05 FILLER                   PIC X(04) VALUE SPACES.          
@@ -114,22 +113,22 @@
                                                                          
         01  WSV-DETALLE-LEIDOS.                                          
             05 FILLER                   PIC X(01).                       
-            05 FILLER                   PIC X(29)                        
-                                   VALUE 'TOTAL DE ALUMNOS LEIDOS    : '.
+            05 FILLER                   PIC X(29) VALUE 
+                                        'TOTAL DE ALUMNOS LEIDOS    : '.
             05 WSV-TOT-LEIDOS           PIC ZZ,ZZ9.                      
             05 FILLER                   PIC X(44) VALUE SPACES.          
                                                                          
         01  WSV-DETALLE-IMPRESOS.                                        
             05 FILLER                   PIC X(01).                       
-            05 FILLER                   PIC X(29)                        
-                                 VALUE 'TOTAL DE ALUMNOS IMPRESOS  : '.  
+            05 FILLER                   PIC X(29) VALUE 
+                                        'TOTAL DE ALUMNOS IMPRESOS  : '.  
             05 WSV-TOT-IMPRESOS         PIC ZZ,ZZ9.                      
             05 FILLER                   PIC X(44) VALUE SPACES.          
                                                                          
         01  WSV-DETALLE-SALARIOS.                                        
             05 FILLER                   PIC X(01).                       
-            05 FILLER                   PIC X(35)                        
-                             VALUE 'MONTO TOTAL DESTINADO A BECAS   :'.  
+            05 FILLER                   PIC X(35) VALUE 
+                                    'MONTO TOTAL DESTINADO A BECAS   :'.  
             05 FILLER                   PIC X(30) VALUE SPACES.          
             05 WSV-DET-BECA2            PIC $$$,$$$,$$9.99.              
                                                                          
